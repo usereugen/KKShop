@@ -1,0 +1,54 @@
+.home-top {
+    position: absolute;
+    width: 1680px;
+    height: 698px;
+
+}
+.home-top-title{
+    position: relative;
+    color: #000;
+    /*font-family: Gilroy;*/
+    font-size: 99px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 148.5px */
+    bottom: 600px;
+    right: 105px;
+}
+.home-top-body{
+    position: relative;
+    color: #000;
+    /*font-family: Gilroy;*/
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    bottom: 550px;
+    right: 545px;
+}
+.home-top-button{
+    position: relative;
+    width: 268px;
+    height: 58px;
+    flex-shrink: 0;
+    bottom: 450px;
+    right: 990px;
+    background-color: #000;
+    border: none;
+}
+.home-top-button:hover{
+    opacity: 0.7;
+    transition: all .2s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+.home-top-navigate{
+    color: #FFF;
+    /*font-family: Bebas Neue;*/
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.675px;
+    text-decoration: none;
+}
