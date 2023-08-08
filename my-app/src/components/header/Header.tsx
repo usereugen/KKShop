@@ -18,8 +18,85 @@ const Header = () => {
                             </a>
                         </div>
                         <div>
-                            <ButtonHeader text={"Каталог"} to={"/catalog"} classNameButton={"button-header"}
-                                          classNameNavigate={"button-navigate"}/>
+                            <div className="dropdown-catalog">
+                                <ButtonHeader text={"Каталог"} to={"/catalog"}
+                                              classNameButton={"button-header drop-btn"}
+                                              classNameNavigate={"button-navigate"}/>
+                                <div className="dropdown-content text-start">
+                                    <div className="dropdown-catalog-item justify-between items-center">
+                                        <a href="#" className="drop-btn-item">Очищение</a>
+                                        <div className="dropdown-content-item text-start">
+                                            <a href="#">Демакияж</a>
+                                            <a href="#">Пенки и гели для умывания</a>
+                                        </div>
+                                        <img src="https://saint-petersburg.kkshop.ru/assets/images/arrow-menu.png"
+                                             alt="" className=" h-[11px] pr-2"/>
+                                    </div>
+
+                                    <a href="#">Пилинги и скрабы</a>
+                                    <a href="#">Тоники</a>
+
+                                    <div className="dropdown-catalog-item justify-between items-center">
+                                        <a href="#" className="drop-btn-item">Кремы</a>
+                                        <div className="dropdown-content-item text-start ">
+                                            <a href="#">Дневные и ночные кремы</a>
+                                            <a href="#">Массажные кремы и масла</a>
+                                            <a href="#">Кремы для области вокруг глаз</a>
+                                            <a href="#">BB и CC кремы</a>
+                                        </div>
+                                        <img src="https://saint-petersburg.kkshop.ru/assets/images/arrow-menu.png"
+                                             alt="" className=" h-[11px] pr-2"/>
+                                    </div>
+
+                                    <a href="#">Концентраты</a>
+                                    <a href="#">Концентраты с ферментами</a>
+                                    <a href="#">Сыворотки</a>
+                                    <a href="#">Эссенции</a>
+                                    <a href="#">Эмульсии и гели</a>
+                                    <a href="#">Наборы и аксессуары</a>
+
+                                    <div className="dropdown-catalog-item justify-between items-center">
+                                        <a href="#" className="drop-btn-item">Маски для лица</a>
+                                        <div className="dropdown-content-item text-start ">
+                                            <a href="#">Кремовые маски</a>
+                                            <a href="#">Гидрогелевые маски</a>
+                                            <a href="#">Кремы для области вокруг глаз</a>
+                                            <a href="#">Альгинатные маски</a>
+                                            <a href="#">Гипсовые маски</a>
+                                        </div>
+                                        <img src="https://saint-petersburg.kkshop.ru/assets/images/arrow-menu.png"
+                                             alt="" className=" h-[11px] pr-2"/>
+                                    </div>
+
+                                    <a href="#">Жемчужная линия</a>
+
+                                    <div className="dropdown-catalog-item justify-between items-center">
+                                        <a href="#" className="drop-btn-item">Уход за телом</a>
+                                        <div className="dropdown-content-item text-start ">
+                                            <a href="#">Лосьоны, гели и скрабы</a>
+                                            <a href="#"> Уход за кожей рук, ног и губ</a>
+                                            <a href="#">Массажные масла и кремы</a>
+                                        </div>
+                                        <img src="https://saint-petersburg.kkshop.ru/assets/images/arrow-menu.png"
+                                             alt="" className=" h-[11px] pr-2"/>
+                                    </div>
+
+                                    <div className="dropdown-catalog-item justify-between items-center">
+                                        <a href="#" className="drop-btn-item">Уход за волосами</a>
+                                        <div className="dropdown-content-item text-start ">
+                                            <a href="#">Шампуни</a>
+                                            <a href="#">Бальзамы-ополаскиватели</a>
+                                            <a href="#">Для укладки и выпрямления</a>
+                                            <a href="#">Дополнительный уход</a>
+                                        </div>
+                                        <img src="https://saint-petersburg.kkshop.ru/assets/images/arrow-menu.png"
+                                             alt="" className=" h-[11px] pr-2"/>
+                                    </div>
+
+                                    <a href="#">Набор</a>
+                                </div>
+                            </div>
+
                             <ButtonHeader text={"Бренды"} to={"/brands"} classNameButton={"button-header"}
                                           classNameNavigate={"button-navigate"}/>
                             <ButtonHeader text={"Клуб косметологов"} to={"/club"} classNameButton={"button-header"}
@@ -64,12 +141,14 @@ const Header = () => {
                                   d="M6.99996 5V4C6.99996 2.89543 7.89539 2 8.99996 2C10.1045 2 11 2.89543 11 4V5H6.99996ZM4.99996 5V4C4.99996 1.79086 6.79082 0 8.99996 0C11.2091 0 13 1.79086 13 4V5H15.3308C15.849 5 16.2813 5.39576 16.3269 5.91187L17.373 17.7356C17.5282 19.49 16.1459 21 14.3847 21H3.61449C1.85328 21 0.47095 19.49 0.626162 17.7356L1.67224 5.91187C1.7179 5.39576 2.15022 5 2.66835 5H4.99996ZM13 7H11H6.99996H4.99996H3.58378L2.61838 17.9119C2.56664 18.4967 3.02742 19 3.61449 19H14.3847C14.9718 19 15.4325 18.4967 15.3808 17.9119L14.4154 7H13Z"
                                   fill="black"/>
                         </svg>
-                        <svg className="mr-[20px]" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
-                             viewBox="0 0 21 22" fill="black" fillOpacity="0.8">
-                            <path
-                                d="M2.21106 20.8724C2.21106 22.3759 0 22.3759 0 20.8724C0 16.4503 2.74171 12.7357 6.54472 11.1437C5.12965 9.99397 4.24523 8.22513 4.24523 6.2794C4.24523 2.83015 6.98693 0 10.5246 0C13.9739 0 16.7156 2.83015 16.7156 6.2794C16.7156 8.22513 15.8312 9.99397 14.4161 11.1437C18.2191 12.7357 20.9608 16.4503 20.9608 20.8724C20.9608 22.3759 18.7498 22.3759 18.7498 20.8724C18.7498 16.3618 15.0352 12.6472 10.5246 12.6472C5.92563 12.6472 2.21106 16.3618 2.21106 20.8724ZM10.5246 2.21106C8.22513 2.21106 6.45628 4.06834 6.45628 6.2794C6.45628 8.49045 8.22513 10.2593 10.5246 10.2593C12.7357 10.2593 14.5045 8.49045 14.5045 6.2794C14.5045 4.06834 12.7357 2.21106 10.5246 2.21106Z"
-                                fill="black" fillOpacity="0.8"/>
-                        </svg>
+                        <a href="/auth">
+                            <svg className="mr-[20px]" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                                 viewBox="0 0 21 22" fill="black" fillOpacity="0.8">
+                                <path
+                                    d="M2.21106 20.8724C2.21106 22.3759 0 22.3759 0 20.8724C0 16.4503 2.74171 12.7357 6.54472 11.1437C5.12965 9.99397 4.24523 8.22513 4.24523 6.2794C4.24523 2.83015 6.98693 0 10.5246 0C13.9739 0 16.7156 2.83015 16.7156 6.2794C16.7156 8.22513 15.8312 9.99397 14.4161 11.1437C18.2191 12.7357 20.9608 16.4503 20.9608 20.8724C20.9608 22.3759 18.7498 22.3759 18.7498 20.8724C18.7498 16.3618 15.0352 12.6472 10.5246 12.6472C5.92563 12.6472 2.21106 16.3618 2.21106 20.8724ZM10.5246 2.21106C8.22513 2.21106 6.45628 4.06834 6.45628 6.2794C6.45628 8.49045 8.22513 10.2593 10.5246 10.2593C12.7357 10.2593 14.5045 8.49045 14.5045 6.2794C14.5045 4.06834 12.7357 2.21106 10.5246 2.21106Z"
+                                    fill="black" fillOpacity="0.8"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>

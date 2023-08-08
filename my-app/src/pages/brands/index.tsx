@@ -1,5 +1,4 @@
 import React from "react";
-import exp from "constants";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 

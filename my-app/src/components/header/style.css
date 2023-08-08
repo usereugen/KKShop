@@ -64,3 +64,63 @@
 svg{
     display: flex;
 }
+
+.dropdown-catalog{
+    position: relative;
+    display: inline-block;
+}
+.drop-btn{
+    color: #fff;
+    padding:  16px 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-top: 1px solid #323232;
+    width: 320px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.dropdown-content a {
+    color: #373737;
+    font-size: 18px;
+    padding: 0 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+}
+
+.dropdown-catalog:hover .dropdown-content {display: block;}
+
+
+.dropdown-catalog-item{
+    position: relative;
+    display: flex;
+}
+.dropdown-content-item{
+    color: #373737;
+    font-size: 18px;
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    font-weight: 400;
+}
+.dropdown-content-item {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 320px;
+    height: 400px;
+    z-index: 1;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.dropdown-catalog-item:hover .dropdown-content-item{
+    position: fixed;
+    left: 616px;
+    top: 135px;
+    display: block;
+}

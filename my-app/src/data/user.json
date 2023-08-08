@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "email": "user@gmail.com",
+      "password": "$2a$10$DTa0O6rZNfIydfeSD.33L.hajTIDcxUe9odQNeVuAvYX1JemAYApm",
+      "name": "User1",
+      "phone": "12378906591",
+      "login": "User",
+      "id": 1
+    }
+  ]
+}
