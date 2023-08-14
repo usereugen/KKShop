@@ -1,8 +1,12 @@
 import React from "react";
 import "./style.css"
 import ButtonHeader from "../customeButtonHeader/ButtonHeader";
+import {CatalogData} from "../../utils";
+
 
 const Header = () => {
+
+
 
     return (
         <>
@@ -22,79 +26,23 @@ const Header = () => {
                                 <ButtonHeader text={"Каталог"} to={"/catalog"}
                                               classNameButton={"button-header drop-btn"}
                                               classNameNavigate={"button-navigate"}/>
+
                                 <div className="dropdown-content text-start">
-                                    <div className="dropdown-catalog-item justify-between items-center">
-                                        <a href="#" className="drop-btn-item">Очищение</a>
-                                        <div className="dropdown-content-item text-start">
-                                            <a href="#">Демакияж</a>
-                                            <a href="#">Пенки и гели для умывания</a>
+                                    <div className="h-[20px]"></div>
+                                    {CatalogData.map((item, index) =>
+                                        <div className="dropdown-catalog-item justify-between items-center " key={index}>
+                                            <a href={`/catalog/${item.nameURL}`}>{item.name}</a>
+                                            {item.subMenu && <div className="dropdown-content-item text-start">
+                                                {item.subMenu?.map((el, index) =>
+                                                    <a href={`/catalog/${item.nameURL}/${el}`} key={index}>{el}</a>
+                                                )}
+                                            </div>
+                                            }
+                                            {item.subMenu && <img src={item.img} alt="" className=" h-[11px] pr-2"/>}
                                         </div>
-                                        <img src="https://saint-petersburg.kkshop.ru/assets/images/arrow-menu.png"
-                                             alt="" className=" h-[11px] pr-2"/>
-                                    </div>
-
-                                    <a href="#">Пилинги и скрабы</a>
-                                    <a href="#">Тоники</a>
-
-                                    <div className="dropdown-catalog-item justify-between items-center">
-                                        <a href="#" className="drop-btn-item">Кремы</a>
-                                        <div className="dropdown-content-item text-start ">
-                                            <a href="#">Дневные и ночные кремы</a>
-                                            <a href="#">Массажные кремы и масла</a>
-                                            <a href="#">Кремы для области вокруг глаз</a>
-                                            <a href="#">BB и CC кремы</a>
-                                        </div>
-                                        <img src="https://saint-petersburg.kkshop.ru/assets/images/arrow-menu.png"
-                                             alt="" className=" h-[11px] pr-2"/>
-                                    </div>
-
-                                    <a href="#">Концентраты</a>
-                                    <a href="#">Концентраты с ферментами</a>
-                                    <a href="#">Сыворотки</a>
-                                    <a href="#">Эссенции</a>
-                                    <a href="#">Эмульсии и гели</a>
-                                    <a href="#">Наборы и аксессуары</a>
-
-                                    <div className="dropdown-catalog-item justify-between items-center">
-                                        <a href="#" className="drop-btn-item">Маски для лица</a>
-                                        <div className="dropdown-content-item text-start ">
-                                            <a href="#">Кремовые маски</a>
-                                            <a href="#">Гидрогелевые маски</a>
-                                            <a href="#">Кремы для области вокруг глаз</a>
-                                            <a href="#">Альгинатные маски</a>
-                                            <a href="#">Гипсовые маски</a>
-                                        </div>
-                                        <img src="https://saint-petersburg.kkshop.ru/assets/images/arrow-menu.png"
-                                             alt="" className=" h-[11px] pr-2"/>
-                                    </div>
-
-                                    <a href="#">Жемчужная линия</a>
-
-                                    <div className="dropdown-catalog-item justify-between items-center">
-                                        <a href="#" className="drop-btn-item">Уход за телом</a>
-                                        <div className="dropdown-content-item text-start ">
-                                            <a href="#">Лосьоны, гели и скрабы</a>
-                                            <a href="#"> Уход за кожей рук, ног и губ</a>
-                                            <a href="#">Массажные масла и кремы</a>
-                                        </div>
-                                        <img src="https://saint-petersburg.kkshop.ru/assets/images/arrow-menu.png"
-                                             alt="" className=" h-[11px] pr-2"/>
-                                    </div>
-
-                                    <div className="dropdown-catalog-item justify-between items-center">
-                                        <a href="#" className="drop-btn-item">Уход за волосами</a>
-                                        <div className="dropdown-content-item text-start ">
-                                            <a href="#">Шампуни</a>
-                                            <a href="#">Бальзамы-ополаскиватели</a>
-                                            <a href="#">Для укладки и выпрямления</a>
-                                            <a href="#">Дополнительный уход</a>
-                                        </div>
-                                        <img src="https://saint-petersburg.kkshop.ru/assets/images/arrow-menu.png"
-                                             alt="" className=" h-[11px] pr-2"/>
-                                    </div>
-
-                                    <a href="#">Набор</a>
+                                    )}
                                 </div>
+
                             </div>
 
                             <ButtonHeader text={"Бренды"} to={"/brands"} classNameButton={"button-header"}

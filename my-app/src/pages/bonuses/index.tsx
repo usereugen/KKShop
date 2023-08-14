@@ -8,7 +8,6 @@ const BonusesPage = () => {
 
     return (
         <>
-            <Header/>
             <div className="flex justify-center">
                 <div className="flex w-[1466px] flex-col mt-[70px]">
                     <div className="flex items-start">
@@ -67,7 +66,6 @@ const BonusesPage = () => {
                     <span className="mt-[20px]">При покупке от 3500 руб. доставка БЕСПЛАТНО!</span>
                 </div>
             </div>
-            <Footer/>
         </>
     )
 }

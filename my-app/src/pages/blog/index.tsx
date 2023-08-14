@@ -6,7 +6,6 @@ const BlogPage = () => {
 
     return (
         <>
-            <Header/>
         </>
     )
 }

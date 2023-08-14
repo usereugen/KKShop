@@ -5,7 +5,6 @@ const PartnersPage = () => {
 
     return (
         <>
-            <Header/>
         </>
     )
 }

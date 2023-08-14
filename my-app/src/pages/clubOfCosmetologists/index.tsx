@@ -1,12 +1,9 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 
 const ClubPage = () => {
 
     return (
         <>
-            <Header/>
             <div className="flex justify-center mt-[70px]">
                 <div className="w-[1466px] flex">
                     <div className="flex">
@@ -46,7 +43,6 @@ const ClubPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </>
     )
 }

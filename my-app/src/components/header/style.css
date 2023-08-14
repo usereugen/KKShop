@@ -97,7 +97,6 @@ svg{
 
 
 .dropdown-catalog-item{
-    position: relative;
     display: flex;
 }
 .dropdown-content-item{
@@ -119,8 +118,8 @@ svg{
     padding: 5px 0;
 }
 .dropdown-catalog-item:hover .dropdown-content-item{
-    position: fixed;
-    left: 616px;
-    top: 135px;
+    position: absolute;
+    left: 316px;
+    top: 25px;
     display: block;
 }

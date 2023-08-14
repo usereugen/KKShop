@@ -1,15 +1,12 @@
 import React from "react";
-import Header from "../../components/header/Header";
 import ButtonHeader from "../../components/customeButtonHeader/ButtonHeader";
 import "./style.css"
-import Footer from "../../components/footer/Footer";
 
 
 const HomePage = () => {
 
     return (
         <>
-            <Header/>
             <div className="relative h-[700px]">
                 <img src={require("../../img/Rectangle 5.png")} alt="" className="w-[1680px] h-[625px]"/>
                 <span className="home-top-title">SKINDOM</span>
@@ -115,7 +112,6 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-                <Footer/>
 
         </>
     )

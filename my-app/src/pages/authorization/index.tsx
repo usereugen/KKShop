@@ -7,7 +7,6 @@ import SignIn from "../../components/auth/sign-in/SignIn";
 const AuthorizationPage = () => {
     return (
         <>
-            <Header/>
             <div className="flex justify-center mt-[70px]">
                 <div className="flex w-[1490px]">
                     <div className="flex w-[745px] h-[600px] p-[20px] mb-[20px]">
@@ -19,7 +18,6 @@ const AuthorizationPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </>
     )
 }

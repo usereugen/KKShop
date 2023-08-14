@@ -8,7 +8,6 @@ const BrandsPage = () => {
 
     return (
         <>
-            <Header/>
             <div className="flex justify-center h-[198px] pt-[50px] ">
                 <div className="flex-col w-[1466px] h-[100px]">
                     <h1 className="text-[50px] font-bold  text-start">Бренды</h1>
@@ -20,7 +19,6 @@ const BrandsPage = () => {
                 </div>
 
             </div>
-            <Footer/>
         </>
     )
 }

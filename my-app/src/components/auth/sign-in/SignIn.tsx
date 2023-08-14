@@ -79,7 +79,7 @@ const SignIn = () => {
                                 {errors?.password &&
                                     <p className="error-message">{errors?.password?.message || "error"}</p>}
                             </div>
-                            <span className="text-start tetx-[14px] text-[#212529] font-[16px]">Если вы не помните свой пароль - просто оставьте это поле
+                            <span className="text-start tetx-[0.875em] text-[#212529]">Если вы не помните свой пароль - просто оставьте это поле
                                 пустым и вы получите новый,вместе со ссылкой на активацию.</span>
                         </div>
                     </div>

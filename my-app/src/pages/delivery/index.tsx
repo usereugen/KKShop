@@ -1,13 +1,9 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-
 
 const DeliveryPage = () => {
 
     return (
         <>
-            <Header/>
             <div className="flex justify-center">
                 <div className="flex w-[1466px] flex-col mt-[70px]">
                     <div className="flex items-start">
@@ -74,7 +70,6 @@ const DeliveryPage = () => {
 
                 </div>
             </div>
-            <Footer/>
         </>
     )
 }
